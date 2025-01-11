@@ -1,0 +1,15 @@
+name: context env
+on:
+ push
+env:
+ my_var: workflow-level
+jobs:
+ build-job:
+  runs-on: ubuntu-latest
+  env: 
+   my_var: job-level
+  steps:
+   - name: context-env
+     env:
+      my_var: steps-level
+     run: echo "my variable ${{ my_var }}"
