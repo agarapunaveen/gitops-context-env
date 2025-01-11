@@ -6,8 +6,8 @@ env:
 jobs:
  build-job:
   runs-on: ubuntu-latest
-  env: 
-   my_var: job-level
+  # env: 
+   # my_var: job-level
   steps:
    - name: context-env
      # env:
