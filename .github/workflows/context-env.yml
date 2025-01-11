@@ -12,4 +12,4 @@ jobs:
    - name: context-env
      env:
       my_var: steps-level
-     run: echo "my variable ${{ my_var }}"
+     run: echo "my variable ${{ env.my_var }}"
