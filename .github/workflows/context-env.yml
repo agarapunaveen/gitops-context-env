@@ -15,3 +15,4 @@ jobs:
      run: |
       echo "my variable ${{ env.my_var }}"
       echo "my global variable name ${{ vars.reponame }}"
+      echo "my secret variable name ${{ secrets.reponame }}"
