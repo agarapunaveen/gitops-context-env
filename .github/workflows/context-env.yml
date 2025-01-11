@@ -13,4 +13,4 @@ jobs:
      # env:
       # my_var: steps-level
    - run: echo "my variable ${{ env.my_var }}"
-   - run: echo "my global variable name ${{ reponame }}"
+   - run: echo "my global variable name ${{ vars.reponame }}"
